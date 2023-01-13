@@ -1,4 +1,8 @@
 export default defineNuxtConfig({
+  target: 'static',
+  router: {
+    base: '/me.zackha.com/'
+  },
   app: {
     head: {
       charset: 'utf-8',
