@@ -1,7 +1,9 @@
 <template>
   <div class="content">
     <div class="main">
-      <div class="time">{{ currentTime }}</div>
+      <div v-if="date" class="time">{{this.time}} <br/>
+        <small>{{dateBuilder()}}</small>
+      </div>
       <div class="about">
         <div class="face"><img src="/face.png"></div>
         <div class="name">Zack Hatlen</div>
@@ -19,23 +21,55 @@
 <script>
 export default {
   data() {
-    return {
-      currentTime: this.getTime()
+    return{
+      time: '',
+      date: false
     }
-  },
-  created: function() {
-    this.startClock()
   },
   methods: {
-    getTime: function(){
-      return (new Date()).toLocaleTimeString()
+    getTime() {
+      setInterval(() => { this.time = new Date().toLocaleTimeString()}, 1000)
     },
-    startClock: function(){
-      var ctx = this
-      setInterval(function(){
-        ctx.time = ctx.getTime()
+    showToggle() {
+      setTimeout(() => {
+        this.date = true
       }, 1000)
+    },
+    dateBuilder() {
+      let d = new Date()
+      let months = [
+        "January",
+        "Feruary",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December",
+      ]
+      let days = [
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday",
+      ]
+      let day = days[d.getDay()]
+      let date = d.getDate()
+      let month = months[d.getMonth()]
+      let year = d.getFullYear()
+      return `${day} ${date} ${month} ${year}`
     }
+  },
+  mounted() {
+    this.getTime()
+    this.showToggle()
   }
 }
 </script>
@@ -64,6 +98,9 @@ html, body {
   font-size: 12px;
   text-align: center;
   margin: auto auto 3.5rem auto;
+}
+.time small {
+  font-size: 8px;
 }
 .about {
   border: 1px dashed #666;
