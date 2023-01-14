@@ -20,16 +20,22 @@
 export default {
   data() {
     return {
-      currentTime: new Date().toLocaleTimeString()
+      currentTime: this.getTime()
     }
   },
-  mounted() {
-    this.interval = setInterval(() => {
-      this.currentTime = new Date().toLocaleTimeString()
-    }, 1000)
+  created: function() {
+    this.startClock()
   },
-  beforeDestroy() {
-    clearInterval(this.interval)
+  methods: {
+    getTime: function(){
+      return (new Date()).toLocaleTimeString()
+    },
+    startClock: function(){
+      var ctx = this
+      setInterval(function(){
+        ctx.time = ctx.getTime()
+      }, 1000)
+    }
   }
 }
 </script>
