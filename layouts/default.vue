@@ -35,6 +35,16 @@ export default {
 </script>
 
 <style>
+.page-enter-active,
+.page-leave-active {
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  transition-duration: 200ms;
+}
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
 html, body {
   font-size: 11px;
   margin: 0;
@@ -70,9 +80,6 @@ html, body {
   padding: 12px;
   max-width: 189px;
 }
-.about .info .link {
-  font-weight: bold;
-}
 .face {
   text-align: center;
   height: 188px;
@@ -96,10 +103,12 @@ html, body {
   padding: 1px 3px;
   margin: 0 2px 0px 2px;
   border-radius: 3px;
+  font-weight: 400;
 }
 .link {
   text-decoration: none;
   color: #000;
+  font-weight: bold;
 }
 .link:hover {
   background-color: red;
