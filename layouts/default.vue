@@ -2,15 +2,12 @@
   <div class="content">
     <div class="main">
       <div class="time">{{ currentTime }}</div>
-      <div class="about">
-        <div class="face"><img src="/face.png"></div>
-        <div class="name">Zack Hatlen</div>
-        <div class="info"> I am a frontend engineer and designer focused on modern web technologies such as <a target="_blank" href="https://vuejs.org/guide/introduction.html">Vue</a>, <a target="_blank" href="https://reactjs.org/docs/getting-started.html">React</a>, <a target="_blank" href="https://nuxt.com/docs/getting-started/introduction">Nuxt</a>, <a target="_blank" href="https://graphql.org/learn/">GraphQL</a> and serverless computing. Usually, I work with eCommerce technologies in <a target="_blank" href="https://woocommerce.github.io/woocommerce-rest-api-docs/">Woocommerce</a>.</div>
-      </div>
+      <Nuxt/>
       <div class="contact">
-        <a target="_blank" href="https://www.github.com/zackha/">github</a>
-        <a target="_blank" href="mailto:zckhtln@icloud.com?subject=I want you">email</a>
-        <a target="_blank" href="">cv</a>
+        <NuxtLink to="/" class="link">me</NuxtLink>
+        <a target="_blank" href="https://www.github.com/zackha/" class="link">github</a>
+        <a target="_blank" href="mailto:zckhtln@icloud.com?subject=I want you" class="link">email</a>
+        <NuxtLink to="/projects" class="link">projects</NuxtLink>
       </div>
     </div>
   </div>
@@ -51,7 +48,7 @@ html, body {
   justify-content: center;
 }
 .main {
-  max-width: 214px;
+  max-width: 385px;
   max-height: 80%;
   position: absolute;
   top: 50%;
@@ -71,6 +68,10 @@ html, body {
   background-color: #fff;
   box-shadow: 0px 0px 0px 12px #fff;
   padding: 12px;
+  max-width: 189px;
+}
+.about .info .link {
+  font-weight: bold;
 }
 .face {
   text-align: center;
@@ -87,29 +88,21 @@ html, body {
   font-size: 15px;
   margin: 12px 0px 3px;
 }
-.info a {
-  color: #000;
-  font-weight: bold;
-  text-decoration: none;
-}
 .contact {
   text-align: center;
   margin: 3.5rem auto auto auto;
 }
-.contact a {
-  padding: 2px 4px;
-  margin: 0px 3px;
+.contact .link {
+  padding: 1px 3px;
+  margin: 0 2px 0px 2px;
+  border-radius: 3px;
+}
+.link {
   text-decoration: none;
   color: #000;
 }
-.contact a:hover {
+.link:hover {
   background-color: red;
   color: #fff;
-  border-radius: 5px;
-}
-.info a:hover {
-  background-color: red;
-  color: #fff;
-  border-radius: 1px;
 }
 </style>
