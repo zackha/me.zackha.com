@@ -105,4 +105,7 @@ html, body {
   background-color: red;
   color: #fff;
 }
+.nuxt-link-exact-active {
+  background-color: white;
+}
 </style>
