@@ -1,9 +1,7 @@
 <template>
   <div class="content">
     <div class="main">
-      <div v-if="date" class="time">{{this.time}} <br/>
-        <small>{{dateBuilder()}}</small>
-      </div>
+      <div class="time">{{ currentTime }}</div>
       <div class="about">
         <div class="face"><img src="/face.png"></div>
         <div class="name">Zack Hatlen</div>
@@ -21,55 +19,20 @@
 <script>
 export default {
   data() {
-    return{
-      time: '',
-      date: false
-    }
-  },
-  methods: {
-    getTime() {
-      setInterval(() => { this.time = new Date().toLocaleTimeString()}, 1000)
-    },
-    showToggle() {
-      setTimeout(() => {
-        this.date = true
-      }, 1000)
-    },
-    dateBuilder() {
-      let d = new Date()
-      let months = [
-        "January",
-        "Feruary",
-        "March",
-        "April",
-        "May",
-        "June",
-        "July",
-        "August",
-        "September",
-        "October",
-        "November",
-        "December",
-      ]
-      let days = [
-        "Sunday",
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday",
-        "Saturday",
-      ]
-      let day = days[d.getDay()]
-      let date = d.getDate()
-      let month = months[d.getMonth()]
-      let year = d.getFullYear()
-      return `${day} ${date} ${month} ${year}`
+    return {
+      currentTime: ''
     }
   },
   mounted() {
-    this.getTime()
-    this.showToggle()
+    this.updateTime()
+    setInterval(() => {
+      this.updateTime()
+    }, 1000)
+  },
+  methods: {
+    updateTime() {
+      this.currentTime = new Date().toLocaleTimeString()
+    }
   }
 }
 </script>
