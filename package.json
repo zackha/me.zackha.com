@@ -1,15 +1,21 @@
 {
+  "name": "zack-hatlen",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
+    "dev": "nuxt",
     "build": "nuxt build",
-    "dev": "nuxt dev",
+    "start": "nuxt start",
     "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
     "deploy": "gh-pages -d dist"
   },
-  "devDependencies": {
+  "dependencies": {
+    "core-js": "^3.25.3",
     "gh-pages": "^4.0.0",
-    "nuxt": "3.0.0"
-  }
+    "nuxt": "^2.15.8",
+    "vue": "^2.7.10",
+    "vue-server-renderer": "^2.7.10",
+    "vue-template-compiler": "^2.7.10"
+  },
+  "devDependencies": {}
 }
