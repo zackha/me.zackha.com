@@ -72,29 +72,6 @@ html, body {
 .time small {
   font-size: 8px;
 }
-.about {
-  border: 1px dashed #666;
-  border-radius: 22px;
-  background-color: #fff;
-  box-shadow: 0px 0px 0px 12px #fff;
-  padding: 12px;
-  max-width: 189px;
-}
-.face {
-  text-align: center;
-  height: 188px;
-}
-.face img {
-  width: 188px;
-  height: 188px;
-  border-radius: 12px;
-  box-shadow: 0px 0px 20px -5px rgb(0 0 0 / 40%);
-}
-.name {
-  font-weight: 600;
-  font-size: 15px;
-  margin: 12px 0px 3px;
-}
 .contact {
   text-align: center;
   margin: 3.5rem auto auto auto;
