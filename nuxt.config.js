@@ -1,5 +1,8 @@
 export default {
   target: 'static',
+  buildModules: [
+    '@nuxt/image'
+  ],
   head: {
     title: 'Zack Hatlen',
     htmlAttrs: {
