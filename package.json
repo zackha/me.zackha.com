@@ -17,6 +17,7 @@
     "vue-template-compiler": "^2.7.10"
   },
   "devDependencies": {
+    "@nuxt/image": "^0.7.1",
     "push-dir": "^0.4.1"
   }
 }
