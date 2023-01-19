@@ -83,6 +83,7 @@
 .scrollable-pane:before {
   background: linear-gradient(0deg, rgb(255 255 255 / 0%), #f2f2f2 90%);
   top: 0;
+  margin-top: -1px;
 }
 .scrollable-pane:after {
   background: linear-gradient(to bottom, rgb(0 0 0 / 0%), #f2f2f2 90%);
