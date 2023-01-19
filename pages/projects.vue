@@ -75,7 +75,7 @@
 .scrollable-pane:after, .scrollable-pane:before {
   height: 50px;
   content: "";
-  width: calc(100%);
+  width: calc(100% - 8px);
   position: absolute;
   z-index: 10;
   transition: ease 500ms;
@@ -125,6 +125,17 @@
   align-self: flex-end;
 }
 ::-webkit-scrollbar {
-  display: none;
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e5e5;
+  border-radius: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d5d5d5;
+  border-radius: 7px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5c5c5;
 }
 </style>
