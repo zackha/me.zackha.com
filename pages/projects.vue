@@ -1,5 +1,6 @@
 <template>
   <div class="scrollable-pane top">
+  <div class="arrow-up"></div>
     <div class="pane">
       <div class="projects scrollable">
         <div class="project mb">
@@ -60,6 +61,7 @@
         </div>
       </div>
     </div>
+  <div class="arrow-down"></div>
   </div>
 </template>
 
@@ -148,17 +150,28 @@ export default {
   align-self: flex-end;
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  display: none;
 }
-::-webkit-scrollbar-track {
-  background: #e5e5e5;
-  border-radius: 7px;
+.arrow-down, .arrow-up {
+  position: absolute;
+  right: calc(50%);
 }
-::-webkit-scrollbar-thumb {
-  background: #d5d5d5;
-  border-radius: 7px;
+.arrow-down {
+  bottom: -15px;
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #c5c5c5;
+.arrow-up {
+  top: -15px;
+}
+.arrow-down::after {
+  content: "˅";
+}
+.arrow-up::before {
+  content: "˄";
+}
+.arrow-down::after, .arrow-up::before {
+  transition: ease 500ms;
+}
+.bottom .arrow-down::after, .top .arrow-up::before {
+  color: #f2f2f2;
 }
 </style>
