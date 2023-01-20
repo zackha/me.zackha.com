@@ -16,8 +16,5 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  components: true,
-  plugins: [
-    { src: '~/plugins/scroll-shadow.js', mode: 'client' }
-  ]
+  components: true
 }
