@@ -1,5 +1,6 @@
 <template>
   <div class="scrollable-pane top">
+  <div class="arrow-up"></div>
     <div class="pane">
       <div class="projects scrollable">
         <div class="project mb">
@@ -60,6 +61,7 @@
         </div>
       </div>
     </div>
+  <div class="arrow-down"></div>
   </div>
 </template>
 
@@ -73,8 +75,8 @@ export default {
     if (pane && scroller && outer) {
       pane.addEventListener("scroll", () => {
         const scroll =  pane.scrollTop;
-        const isTop = scroll < 25;
-        const isMiddle = scroll >= 25 && scroll < (scroller.scrollHeight - pane.offsetHeight) - 25;
+        const isTop = scroll < 1;
+        const isMiddle = scroll >= 1 && scroll < (scroller.scrollHeight - pane.offsetHeight) - 1;
 
         outer.classList.toggle("top", isTop);
         outer.classList.toggle("middle", isMiddle);
@@ -98,7 +100,7 @@ export default {
 .scrollable-pane:after, .scrollable-pane:before {
   height: 50px;
   content: "";
-  width: calc(100% - 8px);
+  width: calc(100%);
   position: absolute;
   z-index: 10;
   transition: ease 500ms;
@@ -109,12 +111,13 @@ export default {
   margin-top: -1px;
 }
 .scrollable-pane:after {
-  background: linear-gradient(to bottom, rgb(0 0 0 / 0%), #f2f2f2 90%);
+  background: linear-gradient(to bottom, rgb(255 255 255 / 0%), #f2f2f2 90%);
   bottom: 0;
   margin-bottom: -1px;
 }
-.bottom.scrollable-pane:after, .top.scrollable-pane:before {
-  height: 0;
+.bottom.scrollable-pane:after, .top.scrollable-pane:before,
+.bottom .arrow-down, .top .arrow-up {
+  opacity: 0;
 }
 .project {
   display: flex;
@@ -148,17 +151,24 @@ export default {
   align-self: flex-end;
 }
 ::-webkit-scrollbar {
-  width: 8px;
+  display: none;
 }
-::-webkit-scrollbar-track {
-  background: #e5e5e5;
-  border-radius: 7px;
+.arrow-down, .arrow-up {
+  position: absolute;
+  right: calc(50%);
+  transition: ease 500ms;
+  height: 10px;
+  width: 11px;
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCIgZmlsbD0iI0JBQkFCQSIgdmlld0JveD0iMCAwIDExIDEwIj48cGF0aCBkPSJNNC41NzggOC41NzFsNC45OTYtNSAxLjQyNyAxLjQyOC00Ljk5NiA1ek0wIDQuMDQxaDkuMDgzdjIuMDJIMHptNC41NzgtMi42MTJMNi4wMDUuMDAxbDQuOTk2IDUtMS40MjcgMS40Mjh6Ij48L3BhdGg+PC9zdmc+);
 }
-::-webkit-scrollbar-thumb {
-  background: #d5d5d5;
-  border-radius: 7px;
+.arrow-down {
+  bottom: -15px;
+  transform: rotate(90deg);
 }
-::-webkit-scrollbar-thumb:hover {
-  background: #c5c5c5;
+.arrow-up {
+  top: -15px;
+  transform: rotate(-90deg);
 }
 </style>
