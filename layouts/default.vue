@@ -2,7 +2,9 @@
   <div class="content">
     <div class="main">
       <div class="time">{{ currentTime }}</div>
-      <Nuxt/>
+      <div class="page">
+        <Nuxt/>
+      </div>
       <div class="contact">
         <NuxtLink to="/" class="link">me</NuxtLink>
         <a target="_blank" href="https://www.github.com/zackha/" class="link">github</a>
@@ -58,7 +60,7 @@ html, body {
   justify-content: center;
 }
 .main {
-  max-width: 385px;
+  max-width: 400px;
   max-height: 80%;
   position: absolute;
   top: 50%;
@@ -71,6 +73,13 @@ html, body {
 }
 .time small {
   font-size: 8px;
+}
+.page {
+  display: flex;
+  flex-wrap: wrap;
+  height: 400px;
+  align-content: center;
+  padding: 0 15px;
 }
 .contact {
   text-align: center;

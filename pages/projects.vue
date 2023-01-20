@@ -95,7 +95,7 @@ export default {
   position: relative;
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 348px;
+  height: 370px;
 }
 .scrollable-pane:after, .scrollable-pane:before {
   height: 50px;
@@ -104,6 +104,7 @@ export default {
   position: absolute;
   z-index: 10;
   transition: ease 500ms;
+  opacity: 1;
 }
 .scrollable-pane:before {
   background: linear-gradient(0deg, rgb(255 255 255 / 0%), #f2f2f2 90%);
@@ -150,9 +151,6 @@ export default {
 .visit {
   align-self: flex-end;
 }
-::-webkit-scrollbar {
-  display: none;
-}
 .arrow-down, .arrow-up {
   position: absolute;
   right: calc(50%);
@@ -170,5 +168,19 @@ export default {
 .arrow-up {
   top: -15px;
   transform: rotate(-90deg);
+}
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #e5e5e5;
+  border-radius: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #d5d5d5;
+  border-radius: 7px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #c5c5c5;
 }
 </style>
