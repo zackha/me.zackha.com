@@ -75,8 +75,8 @@ export default {
     if (pane && scroller && outer) {
       pane.addEventListener("scroll", () => {
         const scroll =  pane.scrollTop;
-        const isTop = scroll < 25;
-        const isMiddle = scroll >= 25 && scroll < (scroller.scrollHeight - pane.offsetHeight) - 25;
+        const isTop = scroll < 1;
+        const isMiddle = scroll >= 1 && scroll < (scroller.scrollHeight - pane.offsetHeight) - 1;
 
         outer.classList.toggle("top", isTop);
         outer.classList.toggle("middle", isMiddle);
@@ -115,8 +115,9 @@ export default {
   bottom: 0;
   margin-bottom: -1px;
 }
-.bottom.scrollable-pane:after, .top.scrollable-pane:before {
-  height: 0;
+.bottom.scrollable-pane:after, .top.scrollable-pane:before,
+.bottom .arrow-down, .top .arrow-up {
+  opacity: 0;
 }
 .project {
   display: flex;
@@ -155,25 +156,19 @@ export default {
 .arrow-down, .arrow-up {
   position: absolute;
   right: calc(50%);
+  transition: ease 500ms;
+  height: 10px;
+  width: 11px;
+  background-repeat: no-repeat;
+  background-size: 11px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMSIgaGVpZ2h0PSIxMCIgZmlsbD0iI0JBQkFCQSIgdmlld0JveD0iMCAwIDExIDEwIj48cGF0aCBkPSJNNC41NzggOC41NzFsNC45OTYtNSAxLjQyNyAxLjQyOC00Ljk5NiA1ek0wIDQuMDQxaDkuMDgzdjIuMDJIMHptNC41NzgtMi42MTJMNi4wMDUuMDAxbDQuOTk2IDUtMS40MjcgMS40Mjh6Ij48L3BhdGg+PC9zdmc+);
 }
 .arrow-down {
-  bottom: -18px;
+  bottom: -15px;
+  transform: rotate(90deg);
 }
 .arrow-up {
-  top: -18px;
-}
-.arrow-down::after {
-  content: "⮟";
-}
-.arrow-up::before {
-  content: "⮝";
-}
-.arrow-down::after, .arrow-up::before {
-  transition: ease 500ms;
-  color: #e1e1e1;
-  font-size: 15px;
-}
-.bottom .arrow-down::after, .top .arrow-up::before {
-  color: #f2f2f2;
+  top: -15px;
+  transform: rotate(-90deg);
 }
 </style>
