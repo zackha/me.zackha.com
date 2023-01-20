@@ -62,6 +62,29 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  mounted() {
+    const pane = document.querySelector(".pane");
+    const scroller = document.querySelector(".pane .scrollable");
+    const outer = document.querySelector(".scrollable-pane");
+
+    if (pane && scroller && outer) {
+      pane.addEventListener("scroll", () => {
+        const scroll =  pane.scrollTop;
+        const isTop = scroll < 25;
+        const isMiddle = scroll >= 25 && scroll < (scroller.scrollHeight - pane.offsetHeight) - 25;
+
+        outer.classList.toggle("top", isTop);
+        outer.classList.toggle("middle", isMiddle);
+        outer.classList.toggle("bottom", !isTop && !isMiddle);
+      });
+    }
+  }
+}
+</script>
+
 <style>
 .scrollable-pane {
   position: relative;
