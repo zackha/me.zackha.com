@@ -157,19 +157,21 @@ export default {
   right: calc(50%);
 }
 .arrow-down {
-  bottom: -15px;
+  bottom: -18px;
 }
 .arrow-up {
-  top: -15px;
+  top: -18px;
 }
 .arrow-down::after {
-  content: "˅";
+  content: "⮟";
 }
 .arrow-up::before {
-  content: "˄";
+  content: "⮝";
 }
 .arrow-down::after, .arrow-up::before {
   transition: ease 500ms;
+  color: #e1e1e1;
+  font-size: 15px;
 }
 .bottom .arrow-down::after, .top .arrow-up::before {
   color: #f2f2f2;
