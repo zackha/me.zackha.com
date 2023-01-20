@@ -98,7 +98,7 @@ export default {
 .scrollable-pane:after, .scrollable-pane:before {
   height: 50px;
   content: "";
-  width: calc(100% - 8px);
+  width: calc(100%);
   position: absolute;
   z-index: 10;
   transition: ease 500ms;
@@ -109,7 +109,7 @@ export default {
   margin-top: -1px;
 }
 .scrollable-pane:after {
-  background: linear-gradient(to bottom, rgb(0 0 0 / 0%), #f2f2f2 90%);
+  background: linear-gradient(to bottom, rgb(255 255 255 / 0%), #f2f2f2 90%);
   bottom: 0;
   margin-bottom: -1px;
 }
