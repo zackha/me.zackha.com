@@ -61,7 +61,7 @@ html, body {
 }
 .main {
   max-width: 400px;
-  max-height: 80%;
+  max-height: 100%;
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
