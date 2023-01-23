@@ -207,7 +207,6 @@ export default {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #e5e5e5;
   border-radius: 7px;
 }
 ::-webkit-scrollbar-thumb {
