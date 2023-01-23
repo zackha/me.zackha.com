@@ -11,7 +11,7 @@
           </div>
           <div class="description">
             <div class="projectname">woonuxt.com</div>
-            <div class="detail">Water resistant nylon with glitter vinyl yoke, down insulated quilted baffles and taffeta lining. Snap front closure with patch</div>
+            <div class="detail">Developed by <a class="visit link"  target="_blank" href="https://github.com/scottyzen">@scottyzen</a> using Nuxt, GraphQL and WooCommerce, and I'm continuing to develop the second interface demo.</div>
             <a class="visit link"  target="_blank" href="https://demo2-woonuxt.netlify.app/product/patterned-wrap-skirt/">examine the project ></a>
           </div>
         </div>
@@ -23,7 +23,7 @@
           </div>
           <div class="description">
             <div class="projectname">rays.com.tr</div>
-            <div class="detail">Water resistant nylon with glitter vinyl yoke, down insulated quilted baffles and taffeta lining. Snap front closure with patch</div>
+            <div class="detail">ERP, POS integration and frontend/backend studies were done for a WooCommerce project using REST API, PHP and CSS.</div>
             <a class="visit link"  target="_blank" href="https://rays.com.tr/">examine the project ></a>
           </div>
         </div>
@@ -35,7 +35,7 @@
           </div>
           <div class="description">
             <div class="projectname">terodon.com</div>
-            <div class="detail">Water resistant nylon with glitter vinyl yoke, down insulated quilted baffles and taffeta lining. Snap front closure with patch</div>
+            <div class="detail">This is still in the process of being developed...</div>
             <a class="visit link"  target="_blank" href="https://terodon.com/">examine the project ></a>
           </div>
         </div>
@@ -47,7 +47,7 @@
           </div>
           <div class="description">
             <div class="projectname">reybul.com</div>
-            <div class="detail">Water resistant nylon with glitter vinyl yoke, down insulated quilted baffles and taffeta lining. Snap front closure with patch</div>
+            <div class="detail">Furniture Corporate Website developed using only HTML and CSS</div>
             <a class="visit link"  target="_blank" href="https://reybul.com/">examine the project ></a>
           </div>
         </div>
@@ -59,7 +59,7 @@
           </div>
           <div class="description">
             <div class="projectname">zackha.com</div>
-            <div class="detail">Water resistant nylon with glitter vinyl yoke, down insulated quilted baffles and taffeta lining. Snap front closure with patch</div>
+            <div class="detail">This is still in the process of being developed...</div>
             <a class="visit link"  target="_blank" href="https://zackha.com/">examine the project ></a>
           </div>
         </div>
@@ -71,7 +71,7 @@
           </div>
           <div class="description">
             <div class="projectname">woocommerce-admin</div>
-            <div class="detail">Water resistant nylon with glitter vinyl yoke, down insulated quilted baffles and taffeta lining. Snap front closure with patch</div>
+            <div class="detail">An alternative open source woocommerce admin panel developed with <a class="visit link"  target="_blank" href="https://github.com/marmelab/react-admin">React Admin</a></div>
             <a class="visit link"  target="_blank" href="https://github.com/zackha/woocommerce-admin/">examine the project ></a>
           </div>
         </div>
@@ -83,7 +83,7 @@
           </div>
           <div class="description">
             <div class="projectname">ra-data-woocommerce</div>
-            <div class="detail">Water resistant nylon with glitter vinyl yoke, down insulated quilted baffles and taffeta lining. Snap front closure with patch</div>
+            <div class="detail">Woocommerce REST API Data Provider for <a class="visit link"  target="_blank" href="https://github.com/marmelab/react-admin">react-admin</a>, the frontend framework for building admin applications on top of REST/GraphQL services.</div>
             <a class="visit link"  target="_blank" href="https://github.com/zackha/ra-data-woocommerce/">examine the project ></a>
           </div>
         </div>
