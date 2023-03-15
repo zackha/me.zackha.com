@@ -75,6 +75,18 @@
             <a class="visit link"  target="_blank" href="https://github.com/zackha/woocommerce-admin/">examine the project ></a>
           </div>
         </div>
+        <div class="project mb">
+          <div class="image-wrapper">
+            <a href="https://github.com/zackha/supaAuth/" target="_blank">
+              <nuxt-img format="webp" width="300" src="/images/supaAuth.png"/>
+            </a>
+          </div>
+          <div class="description">
+            <div class="projectname">SupaAuth ⚡️ Nuxt3</div>
+            <div class="detail">A <a class="visit link" target="_blank" href="https://nuxt.com/">Nuxt3</a> + <a class="visit link" target="_blank" href="https://supabase.com/">Supabase</a> starter template. Add Login and Register page into your Nuxt 3 project using Supabase authentication.</div>
+            <a class="visit link"  target="_blank" href="https://github.com/zackha/supaAuth/">examine the project ></a>
+          </div>
+        </div>
         <div class="project">
           <div class="image-wrapper">
             <a href="https://github.com/zackha/ra-data-woocommerce/" target="_blank">
