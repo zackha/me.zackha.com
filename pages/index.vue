@@ -3,7 +3,7 @@
     <div class="face">
       <nuxt-img format="webp" width="300" src="/face.png" />
     </div>
-    <div class="name">Sefa Bulak</div>
+    <div class="name">Zack Hatlen</div>
     <div>
       As a creative frontend engineer and designer, I expertly apply modern web
       technologies like
