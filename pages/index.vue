@@ -3,10 +3,10 @@
     <div class="face">
       <nuxt-img format="webp" width="300" src="/face.png" />
     </div>
-    <div class="name">Zack Hatlen</div>
+    <div class="name">Sefa Bulak</div>
     <div>
-      I am a frontend engineer and designer focused on modern web technologies
-      such as
+      As a creative frontend engineer and designer, I expertly apply modern web
+      technologies like
       <a
         target="_blank"
         href="https://vuejs.org/guide/introduction.html"
@@ -15,26 +15,15 @@
       >,
       <a
         target="_blank"
-        href="https://reactjs.org/docs/getting-started.html"
-        class="link"
-        >React</a
-      >,
-      <a
-        target="_blank"
         href="https://nuxt.com/docs/getting-started/introduction"
         class="link"
         >Nuxt</a
-      >,
+      >, and
       <a target="_blank" href="https://graphql.org/learn/" class="link"
         >GraphQL</a
-      >
-      and serverless computing. Usually, I work with eCommerce technologies on
-      <a
-        target="_blank"
-        href="https://woocommerce.github.io/woocommerce-rest-api-docs/"
-        class="link"
-        >Woocommerce</a
-      >.
+      >, along with serverless computing. My main forte is leveraging open
+      source eCommerce platforms to bring forth innovative, high-performing
+      digital solutions.
     </div>
   </div>
 </template>
