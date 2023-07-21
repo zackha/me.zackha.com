@@ -29,6 +29,30 @@
         </div>
         <div class="project mb">
           <div class="image-wrapper">
+            <a href="https://retrocommerce.vercel.app" target="_blank">
+              <nuxt-img
+                format="webp"
+                width="300"
+                src="/images/retrocommerce.png"
+              />
+            </a>
+          </div>
+          <div class="description">
+            <div class="projectname">retroCommerce</div>
+            <div class="detail">
+              An open-source, dynamic e-commerce solution powered by Nuxt 3 and
+              GraphQL, headless storefront replacement for Woocommerce.
+            </div>
+            <a
+              class="visit link"
+              target="_blank"
+              href="https://retrocommerce.vercel.app"
+              >examine the project ></a
+            >
+          </div>
+        </div>
+        <div class="project mb">
+          <div class="image-wrapper">
             <a href="/images/woonuxt-bg.png" target="_blank">
               <nuxt-img format="webp" width="300" src="/images/woonuxt.png" />
             </a>
