@@ -1,9 +1,9 @@
 <template>
   <div class="about">
     <div class="face">
-      <nuxt-img format="webp" width="300" src="/face.png" />
+      <nuxt-img src="/face.png" />
     </div>
-    <div class="name">Zack Hatlen</div>
+    <div class="name">Sefa Bulak</div>
     <div>
       As a creative frontend engineer and designer, I expertly apply modern web
       technologies like
@@ -21,9 +21,9 @@
       >, and
       <a target="_blank" href="https://graphql.org/learn/" class="link"
         >GraphQL</a
-      >, along with serverless computing. My main forte is leveraging open
-      source eCommerce platforms to bring forth innovative, high-performing
-      digital solutions.
+      >, along with headless computing. My main forte is leveraging open source
+      eCommerce platforms to bring forth innovative, high-performing digital
+      solutions.
     </div>
   </div>
 </template>

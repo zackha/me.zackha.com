@@ -1,20 +1,16 @@
 export default {
-  target: 'static',
-  buildModules: [
-    '@nuxt/image'
-  ],
+  target: "static",
+  buildModules: ["@nuxt/image"],
   head: {
-    title: 'Zack Hatlen',
+    title: "Sefa Bulak",
     htmlAttrs: {
-      lang: 'en'
+      lang: "en",
     },
     meta: [
-      { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
+      { charset: "utf-8" },
+      { name: "viewport", content: "width=device-width, initial-scale=1" },
     ],
-    link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }],
   },
-  components: true
-}
+  components: true,
+};
