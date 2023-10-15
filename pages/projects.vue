@@ -80,23 +80,6 @@
         </div>
         <div class="project mb">
           <div class="image-wrapper">
-            <a href="/images/rays-bg.png" target="_blank">
-              <nuxt-img format="webp" width="300" src="/images/rays.png" />
-            </a>
-          </div>
-          <div class="description">
-            <div class="projectname">rays.com.tr</div>
-            <div class="detail">
-              ERP, POS integration and frontend/backend studies were done for a
-              WooCommerce project using REST API, PHP and CSS.
-            </div>
-            <a class="visit link" target="_blank" href="https://rays.com.tr/"
-              >examine the project ></a
-            >
-          </div>
-        </div>
-        <div class="project mb">
-          <div class="image-wrapper">
             <a href="/images/terodon.png" target="_blank">
               <nuxt-img format="webp" width="300" src="/images/terodon.png" />
             </a>
