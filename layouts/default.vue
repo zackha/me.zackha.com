@@ -3,26 +3,13 @@
     <div class="main">
       <div class="time">{{ currentTime }}</div>
       <div class="page">
-        <Nuxt />
+        <Nuxt/>
       </div>
       <div class="contact">
         <NuxtLink to="/" class="link">me</NuxtLink>
-        <a target="_blank" href="https://www.github.com/zackha/" class="link"
-          >github</a
-        >
-        <a
-          target="_blank"
-          href="mailto:zckhtln@icloud.com?subject=I want you"
-          class="link"
-          >email</a
-        >
+        <a target="_blank" href="https://www.github.com/zackha/" class="link">github</a>
+        <a target="_blank" href="mailto:zckhtln@icloud.com?subject=I want you" class="link">email</a>
         <NuxtLink to="/projects" class="link">projects</NuxtLink>
-        <a
-          target="_blank"
-          href="https://www.buymeacoffee.com/zackha/"
-          class="link"
-          >sponsor</a
-        >
       </div>
     </div>
   </div>
@@ -32,21 +19,21 @@
 export default {
   data() {
     return {
-      currentTime: "",
-    };
+      currentTime: ''
+    }
   },
   mounted() {
-    this.updateTime();
+    this.updateTime()
     setInterval(() => {
-      this.updateTime();
-    }, 1000);
+      this.updateTime()
+    }, 1000)
   },
   methods: {
     updateTime() {
-      this.currentTime = new Date().toLocaleTimeString();
-    },
-  },
-};
+      this.currentTime = new Date().toLocaleTimeString()
+    }
+  }
+}
 </script>
 
 <style>
@@ -60,11 +47,10 @@ export default {
 .page-leave-to {
   opacity: 0;
 }
-html,
-body {
+html, body {
   font-size: 11px;
   margin: 0;
-  font-family: Courier New, Courier, Monaco;
+  font-family: Courier New,Courier,Monaco;
   font-size: 11px;
   background-color: #f2f2f2;
 }
