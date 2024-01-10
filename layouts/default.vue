@@ -10,6 +10,7 @@
         <a target="_blank" href="https://www.github.com/zackha/" class="link">github</a>
         <a target="_blank" href="mailto:zckhtln@icloud.com?subject=I want you" class="link">email</a>
         <NuxtLink to="/projects" class="link">projects</NuxtLink>
+        <a target="_blank" href="https://www.buymeacoffee.com/zackha/" class="link">sponsor</a>
       </div>
     </div>
   </div>
@@ -75,6 +76,7 @@ html, body {
   font-size: 8px;
 }
 .page {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
   height: 400px;
