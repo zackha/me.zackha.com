@@ -5,6 +5,84 @@
       <div class="projects scrollable">
         <div class="project mb">
           <div class="image-wrapper">
+            <a href="https://giris.reklamyap.app" target="_blank">
+              <nuxt-img
+                format="webp"
+                width="300"
+                src="/images/reklamyap-web.jpg"
+              />
+            </a>
+          </div>
+          <div class="description">
+            <div class="projectname">Reklam Yap - Web</div>
+            <div class="detail">
+              A Nuxt3 app that allows supermarkets to create advertisements for
+              their weekly discounts in brochure, social media, and video
+              formats.
+            </div>
+            <a
+              class="visit link"
+              target="_blank"
+              href="https://giris.reklamyap.app"
+              >examine the project ></a
+            >
+          </div>
+        </div>
+        <div class="project mb">
+          <div class="image-wrapper">
+            <a
+              href="https://apps.apple.com/mn/app/reklam-yap/id6470991003"
+              target="_blank"
+            >
+              <nuxt-img
+                format="webp"
+                width="300"
+                src="/images/reklamyap-app.jpg"
+              />
+            </a>
+          </div>
+          <div class="description">
+            <div class="projectname">Reklam Yap - App</div>
+            <div class="detail">
+              A React Native app that allows supermarkets to create
+              advertisements for their weekly discounts in brochure, social
+              media, and video formats.
+            </div>
+            <a
+              class="visit link"
+              target="_blank"
+              href="https://apps.apple.com/mn/app/reklam-yap/id6470991003"
+              >examine the project ></a
+            >
+          </div>
+        </div>
+        <div class="project mb">
+          <div class="image-wrapper">
+            <a href="https://madewithai.netlify.app" target="_blank">
+              <nuxt-img
+                format="webp"
+                width="300"
+                src="/images/madewithai.jpg"
+              />
+            </a>
+          </div>
+          <div class="description">
+            <div class="projectname">Made With AI</div>
+            <div class="detail">
+              A project written using Nuxt3 and the GitHub REST API to
+              automatically send invitation emails for joining a GitHub
+              organization.
+            </div>
+            <a
+              class="visit link"
+              target="_blank"
+              href="https://madewithai.netlify.app"
+              >examine the project ></a
+            >
+          </div>
+        </div>
+        <div class="project mb">
+          <div class="image-wrapper">
             <a href="https://nuxtcommerce.netlify.app" target="_blank">
               <nuxt-img
                 format="webp"

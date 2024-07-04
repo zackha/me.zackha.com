@@ -5,24 +5,21 @@
     </div>
     <div class="name">Sefa Bulak</div>
     <div>
-      As a creative frontend engineer and designer, I expertly apply modern web
-      technologies like
+      As a frontend engineer and designer specializing in modern web
+      technologies, especially
       <a
         target="_blank"
         href="https://vuejs.org/guide/introduction.html"
         class="link"
         >Vue</a
-      >,
-      <a
-        target="_blank"
-        href="https://nuxt.com/docs/getting-started/introduction"
-        class="link"
-        >Nuxt</a
-      >, and
+      >
+      (for web),
+      <a target="_blank" href="https://docs.expo.dev/" class="link">Expo</a>
+      (for mobile), and
       <a target="_blank" href="https://graphql.org/learn/" class="link"
         >GraphQL</a
-      >, along with headless computing. My main forte is leveraging open source
-      eCommerce platforms to bring forth innovative, high-performing digital
+      >
+      with headless computing, I deliver innovative, high-performing digital
       solutions.
     </div>
   </div>
