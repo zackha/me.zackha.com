@@ -5,6 +5,26 @@
       <div class="projects scrollable">
         <div class="project mb">
           <div class="image-wrapper">
+            <a href="https://dashboard.8design.io" target="_blank">
+              <nuxt-img format="webp" width="300" src="/images/8design.jpg" />
+            </a>
+          </div>
+          <div class="description">
+            <div class="projectname">8Design.io</div>
+            <div class="detail">
+              A todo management system cloned from the breeew platform,
+              developed using the Nuxt3 framework.
+            </div>
+            <a
+              class="visit link"
+              target="_blank"
+              href="https://dashboard.8design.io"
+              >examine the project ></a
+            >
+          </div>
+        </div>
+        <div class="project mb">
+          <div class="image-wrapper">
             <a href="https://giris.reklamyap.app" target="_blank">
               <nuxt-img
                 format="webp"
@@ -156,7 +176,7 @@
             >
           </div>
         </div>
-        <div class="project mb">
+        <!--<div class="project mb">
           <div class="image-wrapper">
             <a href="/images/terodon.png" target="_blank">
               <nuxt-img format="webp" width="300" src="/images/terodon.png" />
@@ -171,7 +191,7 @@
               >examine the project ></a
             >
           </div>
-        </div>
+        </div>-->
         <div class="project mb">
           <div class="image-wrapper">
             <a href="/images/reybul-bg.png" target="_blank">
@@ -190,14 +210,14 @@
         </div>
         <div class="project mb">
           <div class="image-wrapper">
-            <a href="/images/zackha.png" target="_blank">
-              <nuxt-img format="webp" width="300" src="/images/zackha.png" />
+            <a href="/images/zackha.jpg" target="_blank">
+              <nuxt-img format="webp" width="300" src="/images/zackha.jpg" />
             </a>
           </div>
           <div class="description">
             <div class="projectname">zackha.com</div>
             <div class="detail">
-              This is still in the process of being developed...
+              My personal website has been developed using Nuxt2.
             </div>
             <a class="visit link" target="_blank" href="https://zackha.com/"
               >examine the project ></a
